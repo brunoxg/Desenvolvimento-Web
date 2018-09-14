@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8" />
+	<title>BGomes - Desenvolvimento Web</title>
+	<link rel="stylesheet" href="css/normalize.css" />
+	<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet" />
+	<link rel="stylesheet" href="css/estilo.css" />
+	<link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet" />
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" />
+	<link rel="stylesheet" href="lib/css/bootstrap.css" />
+</head>
+<body>
+	<div class="header">
+		<div class="linha">
+			<header>
+				<div class="coluna col14">
+					<h1 class="logo">BGomes</h1>
+				</div>
+				<div class="coluna col18">
+					<nav>
+						<ul class="menu inline sem-marcador">
+							<li><a href="index.html">home</a></li>
+							<li><a href="clientes.html">clientes</a></li>
+							<li><a href="servicos.html">serviços</a></li>
+							<li><a href="sobre.html">sobre</a></li>
+							<li><a href="contato.html">contato</a></li>
+						</ul>
+					</nav>
+				</div>
+			</header>
+		</div>
+	</div>
+	<div class="linha"></div>
+		<section>
+			<div class="coluna col5 sidebar">
+				<i class="fas fa-map-marked-alt" style="font-size:37px"> Localização</i>
+				<img src="img/mapa.jpg" alt="" />
+				<ul class="sem-padding sem-marcador">
+					<li><strong>Pedro Andrelino Martins, 755</strong></li>
+					<li><strong>Jardim São Carlos</strong></li>
+					<li><strong>Pariquera Açu-SP</strong></li>
+				</ul>
+				<i class="fas fa-angle-down" style="font-size:37px"> Contato direto</i>
+				<ul class="sem sem-padding sem-marcador">
+					<li><i class="fas fa-mobile" style="font-size:35px"> Fone:</i><strong> (13) 99737-1177</strong></li>
+					<li><i class="fas fa-envelope-square" style="font-size:35px"> Email:</i><strong> brunoxg@outlook.com</strong></li>
+					<li><i class="fab fa-skype" style="font-size:35px"><strong> Skype:</strong></i><strong> bruno.xg</strong></li>
+					
+				</ul>
+			</div>
+			<div class="coluna col7">
+				<i class="fas fa-comments" style="font-size:37px"> Envie uma mensagem</i>
+				<form class="needs-validation" novalidate>
+						<div class="form-row">
+						  <div class="col-md-4 mb-3">
+							<label for="validationCustom01">Primeiro Nome</label>
+							<input type="text" class="form-control" id="validationCustom01" placeholder="Primeiro Nome" value="" required>
+							<div class="valid-feedback">
+							  Looks good!
+							</div>
+						  </div>
+						  <div class="col-md-4 mb-3">
+							<label for="validationCustom02">Ultimo Nome</label>
+							<input type="text" class="form-control" id="validationCustom02" placeholder="Ultimo Nome" value="" required>
+							<div class="valid-feedback">
+							  Looks good!
+							</div>
+						  </div>
+						  <div class="col-md-4 mb-3">
+							<label for="validationCustomUsername">E-Mail</label>
+							<div class="input-group">
+							  <div class="input-group-prepend">
+								<span class="input-group-text" id="inputGroupPrepend">@</span>
+							  </div>
+							  <input type="text" class="form-control" id="validationCustomUsername" placeholder="E-Mail" aria-describedby="inputGroupPrepend" required>
+							  <div class="invalid-feedback">
+								Por favor, escolha um e-mail válido.
+							  </div>
+							</div>
+						  </div>
+						</div>
+						<div class="form-row">
+						 	 <div class="col-md-6 mb-3">
+								<label for="validationCustom03">Cidade</label>
+								<input type="text" class="form-control" id="validationCustom03" placeholder="Cidade" required>					
+
+								<div class="invalid-feedback">
+									Por favor, forneça uma cidade válida.
+								</div>
+						  	</div>
+						  <div class="col-md-3 mb-3">
+								<label for="validationCustom04">Estado</label>
+								<input type="text" class="form-control" id="validationCustom04" placeholder="Estado" required>
+								<div class="invalid-feedback">
+									Por favor, forneça um estado válido.
+								</div>
+						  </div>
+						  <div class="col-md-3 mb-3">
+								<label for="validationCustom05">CEP</label>
+								<input type="text" class="form-control" id="validationCustom05" placeholder="CEP" required>
+							
+								<div class="invalid-feedback">
+							 		Por favor, forneça um cep válido.
+								</div>
+						  </div>
+						</div>
+						<textarea rows="5" cols="71" maxlength="500" placeholder="Mensagem"></textarea>
+						<div class="form-group">
+						  	<div class="form-check">
+								<input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+								<label class="form-check-label" for="invalidCheck">
+									Concordo com os termos e condições
+								</label>
+								<div class="invalid-feedback">
+									Você deve concordar antes de enviar.
+								</div>
+						  	</div>
+						</div>
+						<button class="btn btn-primary" type="submit">Enviar mensagem</button>
+				</form>		  
+					  <script>
+					  // Example starter JavaScript for disabling form submissions if there are invalid fields
+					  (function() {
+						'use strict';
+						window.addEventListener('load', function() {
+						  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+						  var forms = document.getElementsByClassName('needs-validation');
+						  // Loop over them and prevent submission
+						  var validation = Array.prototype.filter.call(forms, function(form) {
+							form.addEventListener('submit', function(event) {
+							  if (form.checkValidity() === false) {
+								event.preventDefault();
+								event.stopPropagation();
+							  }
+							  form.classList.add('was-validated');
+							}, false);
+						  });
+						}, false);
+					  })();
+					  </script>
+			</div>
+		</section>
+	</div>
+	<div class="conteudo-extra">
+		<div class="linha">
+			<div class="coluna col7 contato">
+				<section>
+					<i class="fas fa-angle-right" style="font-size:30px"> Metodo alternativa de contato</i>
+					<p>Caso nao consigo me contatar por alguins dos meio acima, possivelmente eu estarei em uma ilha deserta em algum lugar do pacifico.</p>
+				</section>
+			</div>
+			<div class="coluna col5">
+				<i class="fas fa-newspaper" style="font-size:35px"> Últimas Notícias</i>
+				<ul class="sem-marcador sem-padding noticias">
+					<li>
+						<div class="card" style="width: 18rem;">
+							<img class="card-img-top" src="img/noticias.jpg" alt="Card image cap" width="286" height="180">
+								<div class="card-body">
+									<i class="fas fa-newspaper" style="font-size:25px;"> Apple Music lança playlists com as 100 mais tocadas no app.</i>
+									<p class="card-text">Os sucessores dos modelos Acton e Stanamore foram apresentados durante a atual edição da feira de tecnologia alemã IFA e devem ...</p>
+									<button type="button" class="btn btn-outline-secondary">Ver Mais</button>								
+								</div>
+						</div>
+					</li>
+
+					<li>
+						<div class="card" style="width: 18rem;">
+							<img src="img/noticias.jpg" alt="Card image cap" width="286" height="180">
+								<div class="card-body">	
+									<i class="fas fa-newspaper" style="font-size:25px;"> Tecnologia nos mares usa vento para reduzir emissão de CO2.</i>
+									<p class="card-text">Içar a vela principal que parece um tubo vertical gigante e ligar uma bateria do tamanho de um ônibus pequeno: os armadores estão ...</p>
+									<button type="button" class="btn btn-outline-secondary">Ver Mais</button>
+								</div>	
+						</div>
+					<li>
+					
+					<li>
+						<div class="card" style="width: 18rem;">
+							<img src="img/noticias.jpg" alt="Card image cap" width="286" height="180">
+								<div class="card-body">	
+									<i class="fas fa-newspaper" style="font-size:25px;"> Home office impulsiona tecnologia e impacta agentes.</i>
+									<p class="card-text">Nas últimas duas décadas, o negócio de agências passou por uma evolução, sendo que parte dessa mudança tem a ver com o trabalho ...</p>
+									<button type="button" class="btn btn-outline-secondary">Ver Mais</button>
+								</div>
+						</li>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+		<div class="linha">
+			<footer>
+				<div class="coluna col12">
+					<i class="far fa-copyright"> 2018  Todos Direitos Reservados - BGomes Desenvolvimento Web.</i>
+				</div>
+			</footer>
+		</div>
+	</div>
+</body>
+</html>
